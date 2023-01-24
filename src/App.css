@@ -1,38 +1,79 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.diamond-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 50vh;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.diamond1 {
+  width: 0;
+  height: 0;
+  border: 200px solid transparent;
+  border-bottom-color: red;
+  position: relative;
+  top: -50px;
+  transition: 0.5s;
+}
+.diamond1:after {
+  content: "Products";
+  font-size: 40px;
+  font-weight: 600;
+  position: absolute;
+  left: -200px;
+  top: 199px;
+  width: 0;
+  height: 0;
+  border: 200px solid transparent;
+  border-top-color: red;
+  transition: 0.5s;
+}
+.diamond1:hover {
+  border: 220px solid transparent;
+  border-bottom-color: red;
+  cursor: pointer;
+}
+.diamond1:hover:after {
+  left: -220px;
+  top: 219px;
+  border: 220px solid transparent;
+  border-top-color: red;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.diamond2 {
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-bottom-color: red;
+  position: relative;
+  top: -50px;
+  transition: 0.5s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.diamond2:after {
+  content: "Add_Products";
+  font-size: 30px;
+  font-weight: 600;
+  position: absolute;
+  left: -100px;
+  top: 99px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-top-color: red;
+  transition: 0.5s;
+}
+.diamond2:hover {
+  border: 120px solid transparent;
+  border-bottom-color: red;
+  cursor: pointer;
+}
+.diamond2:hover:after {
+  left: -120px;
+  top: 119px;
+  border: 120px solid transparent;
+  border-top-color: red;
+  cursor: pointer;
 }

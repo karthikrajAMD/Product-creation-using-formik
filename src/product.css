@@ -1,0 +1,59 @@
+.product-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.laptop-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.single-products {
+  /* border: 1px solid rgba(0, 0, 0, 0.266); */
+
+  position: relative;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 2px black;
+  transition: all 2s;
+  transition-delay: 2s;
+}
+.three-views {
+  margin: 3px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.back-but {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  margin: 5px;
+}
+
+.product-add-form {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 10px 10px 10px 2px black;
+}
+.text-center {
+  margin: 10px;
+}
+.but-product {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  margin: 5px;
+}
